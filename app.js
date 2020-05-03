@@ -39,7 +39,7 @@ const askMemberInfo = () => {
                         message: "Enter engineer's GitHub username:"
                     }
                 ]).then((engRes) => {
-                    const newEmployee = new Engineer(res.name, res.id, res.email, engRes.gitnubUser);
+                    const newEmployee = new Engineer(res.name, res.id, res.email, engRes.githubUser);
                     employees.push(newEmployee);
                     addMember();
                 })
