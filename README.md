@@ -40,14 +40,14 @@ $ node app.js
 ## Demo
 
 Here is a brief demo of the app:
-1. Open your terminal and type "node index.js":
+1. Open your terminal and type "npm run test" (optional):
 ![](assets/demo_gif_1.gif)
 
 2. Answer the prompts:
 ![](assets/demo_gif_2.gif)
 
-3. Enjoy your new shiny readme!
-![](assets/demo_gif_3.gif)
+3. Enjoy your new dream team page!
+![](assets/demo_3.png)
 
 
 ---
@@ -60,7 +60,7 @@ Here is a brief demo of the app:
 
 ## Tests
 
-This app was made using these technologies:
+This app was made using the following technologies:
 - <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
 - <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
 > npm packages:
