@@ -59,3 +59,29 @@ const askMemberInfo = () => {
             }
         })
 }
+
+// Adding additional team members:
+const addMember = () => {
+    inquirer.prompt([
+        {
+            type: 'confirm',
+            message: 'Add another team member?',
+            name: 'add'
+        }
+    ])
+        .then((res) => {
+            if (res.add === true) { askMemberInfo() }
+            else { createHTML() }
+        });
+}
+
+// Creating the html page:
+const createHTML = () => {
+    fs.writeFile(outputPath, render(employees), function (err) {
+        if (err) {
+            throw err;
+        }
+    });
+}
+
+askMemberInfo();
