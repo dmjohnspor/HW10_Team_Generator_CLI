@@ -65,7 +65,7 @@ This app was made using these technologies:
 - <a href="https://nodejs.org/en/" target="_blank">Node.js</a>
 > npm packages:
 - <a href="https://www.npmjs.com/package/inquirer" target="_blank">Inquirer</a>
-- <a href="https://jestjs.io/" target="_blank>Jest</a>
+- <a href="https://jestjs.io/" target="_blank">Jest</a>
 
 ---
 
