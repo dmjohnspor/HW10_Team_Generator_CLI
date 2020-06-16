@@ -7,6 +7,9 @@ const fs = require("fs");
 const inquirer = require("inquirer");
 const questions = require("./lib/questions");
 
+const figlet = require("figlet");
+const chalk = require('chalk');
+
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
@@ -84,4 +87,21 @@ const createHTML = () => {
     });
 }
 
-askMemberInfo();
+// Beautiful intro screen with ASCII text art
+figlet("Team", function (err, data) {
+    if (err) {
+        console.log('Something went wrong...');
+        console.dir(err);
+        return;
+    }
+    console.log(chalk.magentaBright(data));
+    figlet("Tracker", function (err, data) {
+        if (err) {
+            console.log('Something went wrong...');
+            console.dir(err);
+            return;
+        }
+        console.log(chalk.yellowBright(data));
+        askMemberInfo();
+    });
+});
